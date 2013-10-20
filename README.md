@@ -1,0 +1,1 @@
+You can view animated GIFs in this [blog post](http://blog.yjl.im/2013/10/terrain-generation.html).
