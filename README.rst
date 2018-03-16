@@ -22,6 +22,45 @@ Blue Ocean
    ``blue-ocean.sh`` (256-color)
 
 
+Elementary cellular automaton
+-----------------------------
+
+.. figure:: i/blue-ocean-eca-150.png
+
+   Default Rule 150
+   (`YouTube <https://www.youtube.com/watch?v=DftJ8GGlPio>`__)
+
+``blue-ocean-eca.sh`` uses `elementary cellular automaton`_ (ECA) to simulate
+random depth (blue color value) changes with Bash ``$RANDOM``.  The script
+accepts one argument as the ECA rule number, default is 150.  The use of ECA
+was inspired by fireplace_.
+
+.. _elementary cellular automaton: https://en.wikipedia.org/wiki/Elementary_cellular_automata
+.. _fireplace: https://github.com/Wyatt915/fireplace
+
+
+The ECA state controls if the blue value randomly (10% of ``$RANDOM``) goes up
+or down.  Both ECA cellular tape and the array of blue values are `cyclic tag
+system`_, which is unlike previous Blue Ocean scripts, which have edges.
+
+.. _cyclic tag system: https://en.wikipedia.org/wiki/Tag_system#Cyclic_tag_systems
+
+
+The following screenshots are with different rules:
+
+.. figure:: i/blue-ocean-eca-110.png
+
+   `Rule 110 <https://en.wikipedia.org/wiki/Rule_110>`_
+
+.. figure:: i/blue-ocean-eca-60.png
+
+   `Rule 30 <https://en.wikipedia.org/wiki/Rule_30>`_
+
+.. figure:: i/blue-ocean-eca-90.png
+
+   `Rule 90 <https://en.wikipedia.org/wiki/Rule_90>`_
+
+
 Gray Canyon
 ===========
 
